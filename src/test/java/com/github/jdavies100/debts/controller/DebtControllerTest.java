@@ -1,10 +1,8 @@
-package com.github.jdavies100.debt.controller;
+package com.github.jdavies100.debts.controller;
 
-import static org.junit.Assert.*;
 import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD;
 
-import com.github.jdavies100.debt.controller.helpers.PersonControllerHelper;
-import org.apache.commons.lang.RandomStringUtils;
+import com.github.jdavies100.debts.controller.helpers.PersonControllerHelper;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

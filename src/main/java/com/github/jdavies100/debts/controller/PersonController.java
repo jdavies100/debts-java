@@ -1,8 +1,8 @@
-package com.github.jdavies100.debt.controller;
+package com.github.jdavies100.debts.controller;
 
-import com.github.jdavies100.debt.exception.PersonNotFoundException;
-import com.github.jdavies100.debt.service.PersonService;
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.exception.PersonNotFoundException;
+import com.github.jdavies100.debts.service.PersonService;
+import com.github.jdavies100.debts.model.Person;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

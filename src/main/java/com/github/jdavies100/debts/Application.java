@@ -1,4 +1,4 @@
-package com.github.jdavies100.debt;
+package com.github.jdavies100.debts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

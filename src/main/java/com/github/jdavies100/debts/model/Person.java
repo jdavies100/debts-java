@@ -1,13 +1,9 @@
-package com.github.jdavies100.debt.model;
+package com.github.jdavies100.debts.model;
 
 import java.util.*;
 import javax.persistence.*;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.*;
-import org.springframework.util.CollectionUtils;
 
 @Entity
 @Table(name = "PERSON")

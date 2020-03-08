@@ -1,6 +1,6 @@
-package com.github.jdavies100.debt.service;
+package com.github.jdavies100.debts.service;
 
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.model.Person;
 import org.springframework.stereotype.Component;
 
 @Component

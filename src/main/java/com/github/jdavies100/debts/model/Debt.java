@@ -1,4 +1,4 @@
-package com.github.jdavies100.debt.model;
+package com.github.jdavies100.debts.model;
 
 import java.util.UUID;
 import javax.persistence.Entity;

@@ -1,12 +1,12 @@
-package com.github.jdavies100.debt.controller;
+package com.github.jdavies100.debts.controller;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD;
 
-import com.github.jdavies100.debt.controller.helpers.PersonControllerHelper;
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.controller.helpers.PersonControllerHelper;
+import com.github.jdavies100.debts.model.Person;
 import java.util.List;
 import org.apache.commons.lang.RandomStringUtils;
 import org.junit.After;

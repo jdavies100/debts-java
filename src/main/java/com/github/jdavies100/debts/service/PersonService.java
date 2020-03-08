@@ -1,7 +1,7 @@
-package com.github.jdavies100.debt.service;
+package com.github.jdavies100.debts.service;
 
-import com.github.jdavies100.debt.exception.PersonNotFoundException;
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.exception.PersonNotFoundException;
+import com.github.jdavies100.debts.model.Person;
 import java.util.List;
 import org.springframework.stereotype.Component;
 

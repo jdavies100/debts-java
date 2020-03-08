@@ -1,7 +1,7 @@
-package com.github.jdavies100.debt.controller;
+package com.github.jdavies100.debts.controller;
 
-import com.github.jdavies100.debt.service.DebtService;
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.service.DebtService;
+import com.github.jdavies100.debts.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -39,7 +39,7 @@ public class DebtController {
         return debtService.removeDebt(personId, debtId);
     }
 
-    @DeleteMapping(value = "person/{personId}/debts/all")
+    @DeleteMapping(value = "person/{personId}/debts")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public @ResponseBody
     Person removeAllDebts(@PathVariable("personId") String personId) throws Exception {

@@ -1,6 +1,6 @@
-package com.github.jdavies100.debt.repository;
+package com.github.jdavies100.debts.repository;
 
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.model.Person;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

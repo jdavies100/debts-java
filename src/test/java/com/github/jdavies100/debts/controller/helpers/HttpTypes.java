@@ -1,4 +1,4 @@
-package com.github.jdavies100.debt.controller.helpers;
+package com.github.jdavies100.debts.controller.helpers;
 
 public enum HttpTypes {
         GET,

@@ -1,10 +1,10 @@
-package com.github.jdavies100.debt.controller.helpers;
+package com.github.jdavies100.debts.controller.helpers;
 
-import static com.github.jdavies100.debt.controller.helpers.HttpTypes.DELETE;
-import static com.github.jdavies100.debt.controller.helpers.HttpTypes.GET;
-import static com.github.jdavies100.debt.controller.helpers.HttpTypes.POST;
+import static com.github.jdavies100.debts.controller.helpers.HttpTypes.DELETE;
+import static com.github.jdavies100.debts.controller.helpers.HttpTypes.GET;
+import static com.github.jdavies100.debts.controller.helpers.HttpTypes.POST;
 
-import com.github.jdavies100.debt.model.Person;
+import com.github.jdavies100.debts.model.Person;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;

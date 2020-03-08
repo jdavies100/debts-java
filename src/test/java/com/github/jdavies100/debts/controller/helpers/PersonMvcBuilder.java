@@ -1,4 +1,4 @@
-package com.github.jdavies100.debt.controller.helpers;
+package com.github.jdavies100.debts.controller.helpers;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

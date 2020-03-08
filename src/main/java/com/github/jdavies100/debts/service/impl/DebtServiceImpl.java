@@ -1,12 +1,12 @@
-package com.github.jdavies100.debt.service.impl;
+package com.github.jdavies100.debts.service.impl;
 
-import com.github.jdavies100.debt.exception.DebtNotRemovedException;
-import com.github.jdavies100.debt.exception.PersonNotFoundException;
-import com.github.jdavies100.debt.service.DebtService;
-import com.github.jdavies100.debt.service.PersonService;
-import com.github.jdavies100.debt.model.Debt;
-import com.github.jdavies100.debt.model.Person;
-import java.util.List;
+import com.github.jdavies100.debts.exception.DebtNotRemovedException;
+import com.github.jdavies100.debts.exception.PersonNotFoundException;
+import com.github.jdavies100.debts.service.DebtService;
+import com.github.jdavies100.debts.service.PersonService;
+import com.github.jdavies100.debts.model.Debt;
+import com.github.jdavies100.debts.model.Person;
+
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;

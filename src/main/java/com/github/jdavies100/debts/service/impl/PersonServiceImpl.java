@@ -1,9 +1,9 @@
-package com.github.jdavies100.debt.service.impl;
+package com.github.jdavies100.debts.service.impl;
 
-import com.github.jdavies100.debt.exception.PersonNotFoundException;
-import com.github.jdavies100.debt.service.PersonService;
-import com.github.jdavies100.debt.model.Person;
-import com.github.jdavies100.debt.repository.PersonRepository;
+import com.github.jdavies100.debts.exception.PersonNotFoundException;
+import com.github.jdavies100.debts.service.PersonService;
+import com.github.jdavies100.debts.model.Person;
+import com.github.jdavies100.debts.repository.PersonRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
