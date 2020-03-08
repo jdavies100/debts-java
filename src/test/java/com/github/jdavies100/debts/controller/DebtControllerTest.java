@@ -22,33 +22,33 @@ import org.springframework.test.web.servlet.MockMvc;
 @DirtiesContext(classMode = BEFORE_EACH_TEST_METHOD)
 public class DebtControllerTest {
 
-    @Rule
-    public ExpectedException thrown;
-    @Autowired
-    private MockMvc mockMvc;
-    private PersonControllerHelper helper;
+  @Rule
+  public ExpectedException thrown;
+  @Autowired
+  private MockMvc mockMvc;
+  private PersonControllerHelper helper;
 
-    @Before
-    public void setUp() {
-        this.helper = new PersonControllerHelper(mockMvc);
-    }
+  @Before
+  public void setUp() {
+    this.helper = new PersonControllerHelper(mockMvc);
+  }
 
-    @After
-    public void tearDown() throws Exception {
-    }
+  @After
+  public void tearDown() throws Exception {
+  }
 
-    @Test
-    public void addDebt() {
+  @Test
+  public void addDebt() {
 //        String name = RandomStringUtils.randomAlphanumeric(10);
 //        String id = helper.postPerson(name)
 //                .get(0).getId();
-    }
+  }
 
-    @Test
-    public void removeDebt() {
-    }
+  @Test
+  public void removeDebt() {
+  }
 
-    @Test
-    public void removeAllDebts() {
-    }
+  @Test
+  public void removeAllDebts() {
+  }
 }

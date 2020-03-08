@@ -8,14 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 public interface PersonService {
 
-    Person createPerson(String name);
+  Person createPerson(String name);
 
-    List<Person> getPeople();
+  List<Person> getPeople();
 
-    Person getPerson(String id) throws PersonNotFoundException;
+  Person getPerson(String id) throws PersonNotFoundException;
 
-    void removePerson(String id) throws PersonNotFoundException;
+  void removePerson(String id) throws PersonNotFoundException;
 
-    Person savePerson(Person person);
+  Person savePerson(Person person);
 
+  Person updatePerson(String id, String name) throws PersonNotFoundException;
 }

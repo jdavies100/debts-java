@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public interface DebtService {
 
-    Person addDebt(String personId, double amount) throws Exception;
+  Person addDebt(String personId, double amount) throws Exception;
 
-    Person removeDebt(String personId, String debtId) throws Exception;
+  Person removeDebt(String personId, String debtId) throws Exception;
 
-    Person removeAllDebts(String personId) throws Exception;
+  Person removeAllDebts(String personId) throws Exception;
 
 }

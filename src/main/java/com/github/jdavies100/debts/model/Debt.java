@@ -9,24 +9,25 @@ import javax.persistence.Table;
 @Table(name = "DEBTS")
 public class Debt {
 
-    public Debt() {}
+  public Debt() {
+  }
 
-    public Debt(double amount) {
-        this.id = UUID.randomUUID().toString();
-        this.amount = amount;
-    }
+  public Debt(double amount) {
+    this.id = UUID.randomUUID().toString();
+    this.amount = amount;
+  }
 
-    @Id
-    private String id;
+  @Id
+  private String id;
 
-    private double amount;
+  private double amount;
 
-    public double getAmount() {
-        return amount;
-    }
+  public double getAmount() {
+    return amount;
+  }
 
-    public String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
 }
