@@ -2,6 +2,7 @@ package com.github.jdavies100.debts.controller;
 
 import com.github.jdavies100.debts.model.Person;
 import com.github.jdavies100.debts.service.DebtService;
+import java.math.BigDecimal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -25,7 +26,7 @@ public class DebtController {
   @PostMapping(value = "person/{personId}/debts")
   @ResponseStatus(HttpStatus.CREATED)
   public @ResponseBody
-  Person addDebt(@PathVariable("personId") String personId, @RequestParam("amount") double amount)
+  Person addDebt(@PathVariable("personId") String personId, @RequestParam("amount") BigDecimal amount)
       throws Exception {
     return debtService.addDebt(personId, amount);
   }

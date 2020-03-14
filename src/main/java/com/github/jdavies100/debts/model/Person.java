@@ -3,7 +3,9 @@ package com.github.jdavies100.debts.model;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -26,6 +28,9 @@ public class Person {
 
   private String name;
 
+  @OneToMany(mappedBy = "personId", orphanRemoval = true, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+  private Set<Debt> debts;
+
   public String getId() {
     return id;
   }
@@ -37,9 +42,6 @@ public class Person {
   public void setName(String name) {
     this.name = name;
   }
-
-  @OneToMany(mappedBy = "id")
-  private Set<Debt> debts;
 
   public Set<Debt> getDebts() {
     return debts;

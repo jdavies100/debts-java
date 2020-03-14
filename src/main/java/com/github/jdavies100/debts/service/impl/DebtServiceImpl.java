@@ -6,6 +6,7 @@ import com.github.jdavies100.debts.model.Debt;
 import com.github.jdavies100.debts.model.Person;
 import com.github.jdavies100.debts.service.DebtService;
 import com.github.jdavies100.debts.service.PersonService;
+import java.math.BigDecimal;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
@@ -23,9 +24,9 @@ public class DebtServiceImpl implements DebtService {
   }
 
   @Override
-  public Person addDebt(String personId, double amount) throws PersonNotFoundException {
+  public Person addDebt(String personId, BigDecimal amount) throws PersonNotFoundException {
     Person person = personService.getPerson(personId);
-    person.getDebts().add(new Debt(amount));
+    person.getDebts().add(new Debt(personId, amount));
     return personService.savePerson(person);
   }
 

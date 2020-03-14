@@ -1,7 +1,7 @@
 *.iml
 .idea/
 target/
-
+h2-database/
 
 # Compiled class file
 *.class

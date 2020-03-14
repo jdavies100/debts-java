@@ -1,9 +1,12 @@
 package com.github.jdavies100.debts.model;
 
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.UUID;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import org.joda.time.DateTime;
 
 @Entity
 @Table(name = "DEBTS")
@@ -12,22 +15,35 @@ public class Debt {
   public Debt() {
   }
 
-  public Debt(double amount) {
+  public Debt(String personId, BigDecimal amount) {
+    this.personId = personId;
     this.id = UUID.randomUUID().toString();
     this.amount = amount;
+    this.timeStamp = new Date();
   }
 
   @Id
   private String id;
 
-  private double amount;
+  private String personId;
 
-  public double getAmount() {
-    return amount;
-  }
+  private Date timeStamp;
+
+  private BigDecimal amount;
 
   public String getId() {
     return id;
   }
 
+  public String getPersonId() {
+    return personId;
+  }
+
+  public Date getTimeStamp() {
+    return timeStamp;
+  }
+
+  public BigDecimal getAmount() {
+    return amount;
+  }
 }
