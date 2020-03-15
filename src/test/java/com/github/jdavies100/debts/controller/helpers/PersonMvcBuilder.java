@@ -21,15 +21,13 @@ public class PersonMvcBuilder {
 
   private MockMvc mockMvc;
   private int status;
-
+  private HttpTypes requestType;
+  private String endpoint;
+  private MultiValueMap<String, String> params;
   public PersonMvcBuilder(MockMvc mockMvc) {
     this.mockMvc = mockMvc;
     this.params = new LinkedMultiValueMap<>();
   }
-
-  private HttpTypes requestType;
-  private String endpoint;
-  private MultiValueMap<String, String> params;
 
   public PersonMvcBuilder param(String key, String value) {
     params.add(key, value);

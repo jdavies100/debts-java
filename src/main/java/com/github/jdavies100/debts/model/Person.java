@@ -14,6 +14,12 @@ import javax.persistence.Table;
 @Table(name = "PERSON")
 public class Person {
 
+  @Id
+  private String id;
+  private String name;
+  @OneToMany(mappedBy = "personId", orphanRemoval = true, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+  private Set<Debt> debts;
+
   public Person() {
   }
 
@@ -22,14 +28,6 @@ public class Person {
     this.name = name;
     this.debts = new HashSet<>();
   }
-
-  @Id
-  private String id;
-
-  private String name;
-
-  @OneToMany(mappedBy = "personId", orphanRemoval = true, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-  private Set<Debt> debts;
 
   public String getId() {
     return id;

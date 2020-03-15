@@ -1,6 +1,5 @@
 package com.github.jdavies100.debts.service.impl;
 
-import com.github.jdavies100.debts.controller.PersonController;
 import com.github.jdavies100.debts.exception.DebtNotRemovedException;
 import com.github.jdavies100.debts.exception.PersonNotFoundException;
 import com.github.jdavies100.debts.model.Debt;
@@ -8,7 +7,6 @@ import com.github.jdavies100.debts.model.Person;
 import com.github.jdavies100.debts.service.DebtService;
 import com.github.jdavies100.debts.service.PersonService;
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;

@@ -1,17 +1,14 @@
 package com.github.jdavies100.debts.service.impl;
 
-import com.github.jdavies100.debts.controller.PersonController;
 import com.github.jdavies100.debts.exception.PersonNotFoundException;
 import com.github.jdavies100.debts.model.Person;
 import com.github.jdavies100.debts.repository.PersonRepository;
 import com.github.jdavies100.debts.service.PersonService;
-import java.util.Collections;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
 
 @Component
 public class PersonServiceImpl implements PersonService {

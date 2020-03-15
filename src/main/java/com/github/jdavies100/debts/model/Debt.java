@@ -12,6 +12,13 @@ import javax.persistence.Table;
 @Table(name = "DEBTS")
 public class Debt {
 
+  @Id
+  private String id;
+  @JsonIgnore
+  private String personId;
+  private Date timeStamp;
+  private BigDecimal amount;
+
   public Debt() {
   }
 
@@ -21,16 +28,6 @@ public class Debt {
     this.amount = amount;
     this.timeStamp = new Date();
   }
-
-  @Id
-  private String id;
-
-  @JsonIgnore
-  private String personId;
-
-  private Date timeStamp;
-
-  private BigDecimal amount;
 
   public String getId() {
     return id;

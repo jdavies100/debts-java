@@ -9,7 +9,6 @@ import com.github.jdavies100.debts.controller.helpers.PersonControllerHelper;
 import com.github.jdavies100.debts.model.Person;
 import java.util.List;
 import org.apache.commons.lang.RandomStringUtils;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
