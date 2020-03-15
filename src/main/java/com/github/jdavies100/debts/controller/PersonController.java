@@ -41,6 +41,7 @@ public class PersonController {
   @ResponseStatus(HttpStatus.OK)
   public @ResponseBody
   List<Person> getAllPersons() {
+    LOG.debug("Getting all people");
     return personService.getPeople();
   }
 
@@ -48,6 +49,7 @@ public class PersonController {
   @ResponseStatus(HttpStatus.OK)
   public @ResponseBody
   Person getPersonById(@PathVariable("id") String id) throws PersonNotFoundException {
+    LOG.debug("Getting person with id: {}", id);
     return personService.getPerson(id);
   }
 

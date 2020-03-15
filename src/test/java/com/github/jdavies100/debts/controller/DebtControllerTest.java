@@ -33,15 +33,9 @@ public class DebtControllerTest {
     this.helper = new PersonControllerHelper(mockMvc);
   }
 
-  @After
-  public void tearDown() throws Exception {
-  }
 
   @Test
   public void addDebt() {
-//        String name = RandomStringUtils.randomAlphanumeric(10);
-//        String id = helper.postPerson(name)
-//                .get(0).getId();
   }
 
   @Test

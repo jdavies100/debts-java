@@ -16,7 +16,8 @@ public interface PersonService {
 
   void removePerson(String id) throws PersonNotFoundException;
 
-  Person savePerson(Person person);
-
   Person updatePerson(String id, String name) throws PersonNotFoundException;
+
+  Person savePerson(Person person);
+  
 }

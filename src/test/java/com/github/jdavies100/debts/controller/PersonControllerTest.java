@@ -42,10 +42,6 @@ public class PersonControllerTest {
     this.helper = new PersonControllerHelper(mockMvc);
   }
 
-  @After
-  public void tearDown() {
-  }
-
   @Test
   public void createPerson() throws Throwable {
     String name = RandomStringUtils.randomAlphanumeric(10);

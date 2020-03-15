@@ -47,4 +47,14 @@ public class Debt {
   public BigDecimal getAmount() {
     return amount;
   }
+
+  @Override
+  public String toString() {
+    return "Debt{" +
+        "id='" + id + '\'' +
+        ", personId='" + personId + '\'' +
+        ", timeStamp=" + timeStamp +
+        ", amount=" + amount +
+        '}';
+  }
 }

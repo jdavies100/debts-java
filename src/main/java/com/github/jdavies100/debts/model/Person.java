@@ -47,4 +47,12 @@ public class Person {
     return debts;
   }
 
+  @Override
+  public String toString() {
+    return "Person{" +
+        "id='" + id + '\'' +
+        ", name='" + name + '\'' +
+        ", debts=" + debts +
+        '}';
+  }
 }
