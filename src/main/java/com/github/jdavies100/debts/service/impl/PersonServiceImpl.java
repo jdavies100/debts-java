@@ -4,9 +4,11 @@ import com.github.jdavies100.debts.exception.PersonNotFoundException;
 import com.github.jdavies100.debts.model.Person;
 import com.github.jdavies100.debts.repository.PersonRepository;
 import com.github.jdavies100.debts.service.PersonService;
+import java.util.Collections;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 @Component
 public class PersonServiceImpl implements PersonService {
@@ -54,6 +56,5 @@ public class PersonServiceImpl implements PersonService {
   private Person findById(String id) throws PersonNotFoundException {
     return repository.findById(id).orElseThrow(() -> new PersonNotFoundException(id));
   }
-
 
 }

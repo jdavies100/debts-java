@@ -24,6 +24,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -31,16 +37,9 @@
     </dependency>
 
     <!-- Application Dependencies -->
-
-<!--    Disabled CVE-2019-17571 - affects versions <= 1.2.27  -->
-<!--    <dependency>-->
-<!--      <groupId>log4j</groupId>-->
-<!--      <artifactId>log4j</artifactId>-->
-<!--      <version>1.2.17</version>-->
-<!--    </dependency>-->
     <dependency>
-      <groupId>joda-time</groupId>
-      <artifactId>joda-time</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>

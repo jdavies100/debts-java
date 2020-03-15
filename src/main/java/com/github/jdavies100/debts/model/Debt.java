@@ -1,12 +1,12 @@
 package com.github.jdavies100.debts.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import org.joda.time.DateTime;
 
 @Entity
 @Table(name = "DEBTS")
@@ -25,6 +25,7 @@ public class Debt {
   @Id
   private String id;
 
+  @JsonIgnore
   private String personId;
 
   private Date timeStamp;

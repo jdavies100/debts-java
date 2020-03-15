@@ -2,6 +2,7 @@
 .idea/
 target/
 h2-database/
+logs/
 
 # Compiled class file
 *.class
