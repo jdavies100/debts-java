@@ -45,7 +45,7 @@ public class DebtServiceImpl implements DebtService {
 
     if (removable.isPresent()) {
       Debt debt = removable.get();
-      LOG.debug("Removing debt from person with id: {}, deleting: {}", personId, debtId);
+      LOG.debug("Removing debt from person with id: {}, deleting: {}", personId, debt);
       debts.remove(debt);
       return personService.savePerson(person);
     }
@@ -57,7 +57,7 @@ public class DebtServiceImpl implements DebtService {
   public Person removeAllDebts(String personId) throws PersonNotFoundException {
     Person person = personService.getPerson(personId);
     Set<Debt> debts = person.getDebts();
-    LOG.debug("Removing all debts from person with id: {}, deleting:", personId);
+    LOG.debug("Removing all debts from person with id: {}, deleting: {}", personId, debts);
     debts.clear();
     return personService.savePerson(person);
   }
